@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulário para mentoria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="text">
+                <h1>Mentoria</h1>
+                <p>Preencha o formulário abaixo para agendar a sua mentoria</p>
+            </div>
+        </header>
+
+        <form id="my-form">
+            <div class="form">
+                <fieldset>
+
+                    <legend>INFORMAÇÕES PESSOAIS</legend>
+
+                    <div class="info-peoople">
+                        <div class="name input-wrapper">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="surname input-wrapper">
+                            <label for="surname">Sobrenome</label>
+                            <input type="text" id="surname" required>
+                        </div>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="email">Email <span>(digite um e-mail válido)</span></label>
+                        <input type="email" id="email">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" id="password" required>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend class="grup-legend">Informações do mentor</legend>
+
+                    <div class="input-wrapper">
+                        <label for="name-mentor">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                        <input type="text" id="name-mentor">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="grup-legend">Seus horários disponíveis</legend>
+                    <h3>Primeira mentoria</h3>
+
+                    <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="date">Data  <span>(DD/MM/AAAA)</span></label>
+                        <input class="first-date" type="date" id="date">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="begin">Das</label>
+                        <input type="time" id="begin">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="end">Até</label>
+                        <input type="time" id="end">
+                    </div>
+                </div>
+
+                <h3>Segunda mentoria</h3>
+
+                <div class="col-3">
+                    <div class="input-wrapper">
+                        <label for="date">Data  <span>(DD/MM/AAAA)</span></label>
+                        <input class="first-date" type="date" id="date">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="begin">Das</label>
+                        <input type="time" id="begin">
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="end">Até</label>
+                        <input type="time" id="end">
+                    </div>
+                </div>
+                </fieldset>
+            </div>
+        </form>
+
+        <footer>
+            <button form="my-form">Salvar</button>
+        </footer>
+    </div>
+</body>
+</html>
